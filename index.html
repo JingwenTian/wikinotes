@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jQuery -->
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+
+  <script src="js/marked.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ditto.js"></script>
+  <script src="js/prism.js"></script>
+  <link rel="stylesheet" href="app/bower_components/normalize-css/normalize.css">
+  <link rel="stylesheet" href="css/app.css">
+  <title>Wiki Notes</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- essential -->
+		<div id="sidebar"></div>
+		<div id="content"></div>
+  <!-- optional -->
+  <div id="back_to_top">back to top</div>
+  <div id="edit">edit</div>
+  <div id="loading">Loading ...</div>
+  <div id="error">Opps! ... File not found!</div>
+  <div id="flip"><div id="pageup">上一章</div><div id="pagedown">下一章</div></div>
+  <div class="progress-indicator-2"></div>
+
+  <script>
+      // essential settings
+      ditto.index = "README.md",
+      ditto.sidebar_file = "sidebar.md",
+	  ditto.document_title = "Wiki Notes",
+      // where the docs are actually stored on github - so you can edit
+      ditto.base_url = "https://github.com/JingwenTian/wikinotes/edit/master";  // <------- EDIT ME!!
+
+      // run
+      ditto.run();
+  </script>
+  <noscript>
+	  <p> Wiki Notes 是一个纯Markdown文档展示程序, 一个用于展示你的说明文档、电子书、代码片段、ideas等的地方。</p>
+	  <p>日常工作中时常书写文档并且需要在web端展示出来, 而它往往不同于博客, 它专注于纯文本的书写方式, 这里采用了Markdown 格式。</p>
+  </noscript>
+</body>
+</html>
