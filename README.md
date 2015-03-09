@@ -98,7 +98,7 @@ Enjoy it!
 	
 	gitbook init
 
-此时就已经已经按照目录文件生成了目录结构
+   此时就已经已经按照目录文件生成了目录结构
 
 3. You can serve a repository as a book using:
 
