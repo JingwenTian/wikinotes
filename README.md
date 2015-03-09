@@ -79,4 +79,33 @@
 配置好后就可以开始你的写作之旅了, 只需要将Markdown 文档放在 `docs` 目录下并且在 目录文件 中做好映射关系就好了!
 
 Enjoy it!
+
+---
+
+##关于Gitbook
+
+`GitBook` 是一个命令行工具（Node.js库），我们可以借用该工具使用 `Github/Git` 和 `Markdown` 来制作精美的图书.
+
+`wikinotes` 就是参考了 `gitbook` 的形式当然只是个人应用记录文档的工具. 如果你想通过 `git/markdown` 来写作推荐你使用 [gitbook](https://github.com/GitbookIO/gitbook) 
+
+**使用方法如下:**
+
+1. 通过 `npm` 安装
+
+	$ npm install gitbook-cli -g
+	
+2. 创建目录和 `SUMMARY.md` 文件(目录文件) 然后执行命令初始化
+	
+	gitbook init
+
+此时就已经已经按照目录文件生成了目录结构
+
+3. You can serve a repository as a book using:
+
+	gitbook serve ./repository
+	
+   Or simply build the static website using:
+   
+   	gitbook build ./repository ./outputFolder
+
 		
